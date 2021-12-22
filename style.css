@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.main_stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  animation: animate 15s linear infinite;
+  perspective: 1000px;
+}
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+.stars2 {
+  border: 1px solid rgb(0, 0, 0);
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  animation: flash 1.4s linear infinite;
+  animation-delay: 2s;
+  margin-bottom: 10px;
+}
+.stars3 {
+  border: 1px solid yellow;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  animation: flash 1.4s linear infinite;
+  animation-delay: 3s;
+  margin-bottom: 10px;
+}
+.stars4 {
+  border: 1px solid yellow;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  animation: flash 1.4s linear infinite;
+  animation-delay: 4s;
+}
+
+.stars2:hover {
+  background-color: tomato;
+}
+.stars3:hover {
+  background-color: tomato;
+}
+.stars4:hover {
+  background-color: rgb(9, 255, 0);
+}
+
+@keyframes flash {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    background-color: green;
+  }
+}
+.back {
+  background-color: rgb(29, 29, 29);
+  border: 10px solid rgb(19, 19, 19);
+}
